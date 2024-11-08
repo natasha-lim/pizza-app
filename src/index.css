@@ -1,13 +1,79 @@
+/* index.css */
+
+/* Global Styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e63946; /* Vibrant red for the header */
+    margin-bottom: 20px;
+}
+
+/* Menu Styles */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.textline {
+    text-align: center;
+    font-size: 2rem;
+    color: #1d3557; /* Dark blue for the menu title */
+}
+
+/* Pizza Component Styles */
+div {
+    background-color: #ffffff; /* White background for pizza cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
+    text-align: center; /* Centered text for pizza details */
+}
+
+.image {
+    width: 100%; /* Full width images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+p {
+    margin: 10px 0; /* Spacing around paragraphs */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #e63946; /* Footer background color matching header */
+    color: white; /* White text for contrast */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem; /* Smaller header on mobile devices */
+    }
+
+    .footer {
+        font-size: 1rem; /* Smaller footer text on mobile devices */
+        padding: 5px; /* Less padding on mobile devices */
+    }
 }
